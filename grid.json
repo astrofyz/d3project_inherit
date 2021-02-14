@@ -23,5 +23,7 @@
  {"source": 3, "target": 8, "value": 1},
  {"source": 8, "target": 13, "value": 1},
  {"source": 4, "target": 9, "value": 1},
- {"source": 9, "target": 14, "value": 1}]
+ {"source": 9, "target": 14, "value": 1},
+{"source": 0, "target": 9, "value": 3},
+ {"source": 0, "target": 14, "value": 3}]
 }
