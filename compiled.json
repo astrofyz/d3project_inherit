@@ -24,14 +24,5 @@
  {"source": 8, "target": 13, "value": 0.5},
  {"source": 4, "target": 9, "value": 0.5},
  {"source": 9, "target": 14, "value": 0.5},
- {"source": 0, "target": 12, "value": 1},
- {"source": 12, "target": 13, "value": 1},
- {"source": 0, "target": 12, "value": 1},
- {"source": 0, "target": 12, "value": 1},
- {"source": 0, "target": 12, "value": 1},
- {"source": 12, "target": 13, "value": 1},
- {"source": 9, "target": 16, "value": 1},
- {"source": 9, "target": 16, "value": 1},
- {"source": 12, "target": 16, "value": 1},
- {"source": 11, "target": 14, "value": 1}]
+ {"source": 0, "target": 12, "value": 1}]
 }
