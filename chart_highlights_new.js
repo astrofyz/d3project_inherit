@@ -37,7 +37,7 @@ const url_general = "https://rating.chgk.info/tournament/";
 
 // Function to load tournament mappings
 function loadTournamentMappings() {
-    return fetch('studchr_jsons/studchr_ids.txt')
+    return fetch('https://raw.githubusercontent.com/astrofyz/d3project_inherit/main/studchr_jsons/studchr_ids.txt')
         .then(response => response.text())
         .then(data => {
             const lines = data.split('\n');
@@ -77,7 +77,7 @@ var sankey = d3.sankey()
 
 // load the data  https://raw.githubusercontent.com/astrofyz/d3project_inherit/main/all_teams.json
 loadTournamentMappings().then(() => {
-    d3.json("all_teams_2025.json", function(error, graph) {
+    d3.json("https://raw.githubusercontent.com/astrofyz/d3project_inherit/main/all_teams_2025.json", function(error, graph) {
         if (error) throw error;
 
         // Set max depth based on max_teams from the data
