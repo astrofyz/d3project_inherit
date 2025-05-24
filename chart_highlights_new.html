@@ -1,0 +1,202 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<!-- Load the sankey.js function -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script> -->
+<script src="sankey_uniform.js"></script>
+
+  <!-- Open Sans & CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300" rel='stylesheet' type='text/css'> -->
+    <style>
+    body {
+      font-family: 'Amatic SC', cursive;
+      font-size: 18px;
+      font-weight: 400;
+      color: #525252;
+      text-align: center;
+    } 
+
+    text {
+      cursor: pointer;
+      font-size: 25px;
+    }
+
+    .title{
+      font-size: 60px;
+    }
+
+/*    .link {  почему если это не убрать, то вылазят вспомогательные линки?
+      fill: none;
+      stroke: #000;
+      stroke-opacity: .2;
+    }*/
+
+      .link:hover {   
+        cursor: pointer;
+      }
+
+    .node circle {
+        cursor: pointer;
+        fill-opacity: .9;
+        shape-rendering: crispEdges;
+    }
+
+    .node text {
+      pointer-events: none;
+      text-shadow: 0 1px 0 #fff;
+    }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: #FFCD8E; 
+  /*background: url(short.svg);*/
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "short";
+  height: 26px;
+  width: 36px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #C384DB;
+  /*background: url(long.svg)*/
+}
+
+/*input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}*/
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+  content: "long";
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 34px;
+}
+
+
+    </style>
+
+
+<div id="intro">
+  <h1>
+    20+n лет студчров
+  </h1>
+  <p>
+    Можно кликать на команды и смотреть, что получается.
+    </p>
+    <p>
+     Можно наводить курсор на линк и тоже смотреть, что получается. 
+   </p>
+   <p>
+    Возможно, какие-то вещи не работают.
+  </p>
+  <div>
+    <label class="switch">
+  <input id='toggle' type="checkbox">
+  <span class="slider round"></span>
+</label>
+  </div>
+</div> 
+
+<!-- <div id="nav">
+
+    <a href="#" id="short" name="short"> short </a>
+    <a href="#" id="long" name="long"> long </a> -->
+
+    <!-- <a href="#" id="video" name="video" onclick=choose(this.name)>Video Game Data Set</a>
+    <a href="#" id="movie" name="movie" onclick=choose(this.name)>Movies Data Set</a>
+    <a href="#" id="kick" name="kick" onclick=choose(this.name)>Kickstarter Data Set</a> -->
+
+    <!-- <a href="#" id="video" name="video">Video Game Data Set</a>
+    <a href="#" id="movie" name="movie">Movies Data Set</a>
+    <a href="#" id="kick" name="kick">Kickstarter Data Set</a> -->
+
+    <!-- <button id="video" name="video">Video Game Data Set</button>
+    <button id="movie" name="movie">Movies Data Set</button>
+    <button id="kick" name="kick">Kickstarter Data Set</button> -->
+
+ <!--  </div> -->
+
+<!-- <script>
+var isChecked=document.getElementById("togVersion").checked;
+console.log(document.getElementById("togVersion"));
+</script>
+ -->
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz">
+  <script src="chart_highlights_new.js">
+  // function update() {
+  //   loadScript("chart_short_highlights.js")
+  // }
+
+
+// function changeExpression(src){
+//     var heat = document.createElement("script");
+//     heat.src = main_heat.js;
+//     document.body.appendChild(heat);
+//     var prop = document.createElement("script");
+//     prop.src = main.js;
+//     document.body.appendChild(prop);
+
+//     if (src === "heat"){
+//         loadScript("main_heat.js")
+//     } else if (src === "prop"){
+//         loadScript("main.js");
+//     }
+// };
+</script>
+</div>
+
+<div id="ending">
+  <p>
+    @astrofyz
+  </p>
+</div> 
