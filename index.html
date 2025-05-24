@@ -1,19 +1,26 @@
 <!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20+N студчров</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="owl_transp.png">
+    <link rel="apple-touch-icon" href="owl_transp.png">
+    
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
 
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Load the sankey.js function -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script> -->
+    <script src="sankey_uniform.js"></script>
 
-
-<!-- Load the sankey.js function -->
-<!-- <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script> -->
-<script src="sankey_uniform.js"></script>
-
-  <!-- Open Sans & CSS -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300" rel='stylesheet' type='text/css'> -->
+    <!-- Open Sans & CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300" rel='stylesheet' type='text/css'> -->
     <style>
     body {
       font-family: 'Amatic SC', cursive;
@@ -123,7 +130,8 @@ input:checked + .slider:before {
 
 
     </style>
-
+</head>
+<body>
 
 <div id="intro">
   <h1>
@@ -200,3 +208,6 @@ console.log(document.getElementById("togVersion"));
     @astrofyz
   </p>
 </div> 
+
+</body>
+</html> 

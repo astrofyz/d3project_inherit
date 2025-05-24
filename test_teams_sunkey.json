@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "name": "2020_Team A",
+      "real_name": "Team A",
+      "team": "Player1\nPlayer2\nPlayer3",
+      "year": "2020",
+      "node": 0,
+      "color": 0
+    },
+    {
+      "name": "2020_Team B",
+      "real_name": "Team B",
+      "team": "Player2\nPlayer3\nPlayer4",
+      "year": "2020",
+      "node": 1,
+      "color": 1
+    },
+    {
+      "name": "2020_Team C",
+      "real_name": "Team C",
+      "team": "Player5\nPlayer6\nPlayer7",
+      "year": "2020",
+      "node": 2,
+      "color": 2
+    },
+    {
+      "name": "2019_Team X",
+      "real_name": "Team X",
+      "team": "Player1\nPlayer2\nPlayer8",
+      "year": "2019",
+      "node": 3,
+      "color": 3
+    },
+    {
+      "name": "2019_Team Y",
+      "real_name": "Team Y",
+      "team": "Player2\nPlayer3\nPlayer9",
+      "year": "2019",
+      "node": 4,
+      "color": 4
+    },
+    {
+      "name": "2019_Team Z",
+      "real_name": "Team Z",
+      "team": "Player5\nPlayer6\nPlayer10",
+      "year": "2019",
+      "node": 5,
+      "color": 5
+    }
+  ],
+  "links": [
+    {
+      "source": 3,
+      "target": 0,
+      "value": 2,
+      "team": "Player1\nPlayer2"
+    },
+    {
+      "source": 3,
+      "target": 1,
+      "value": 1,
+      "team": "Player2"
+    },
+    {
+      "source": 4,
+      "target": 0,
+      "value": 2,
+      "team": "Player3\nPlayer2"
+    },
+    {
+      "source": 4,
+      "target": 1,
+      "value": 2,
+      "team": "Player3\nPlayer2"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "value": 2,
+      "team": "Player6\nPlayer5"
+    }
+  ]
+}
