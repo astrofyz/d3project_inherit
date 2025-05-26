@@ -61,7 +61,8 @@ def read_tournament_files(directory, mapping_file):
             # Process each team in the tournament
             for team_entry in tournament_data:
                 team = team_entry['team']
-                team_name = team['name']
+                # team_name = team['name']
+                team_name = team_entry['current']['name']
                 
                 # Get player names
                 players = []
